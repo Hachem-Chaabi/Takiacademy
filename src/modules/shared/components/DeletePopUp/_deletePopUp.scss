@@ -1,0 +1,114 @@
+.delete_popup_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  transition: 0.5s;
+
+  .delete_popup {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-8);
+    border-radius: 9px;
+    padding: 32px 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 520px;
+    box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+    transition: 0.5s;
+
+    &_title {
+      color: var(--c-3);
+    }
+
+    &_description {
+      color: var(--text-color);
+      margin-bottom: 12px;
+    }
+
+    &_btns_container {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      align-self: flex-end;
+    }
+  }
+}
+
+.button {
+  height: 35px;
+  border-radius: 8px;
+  font-style: normal;
+  line-height: 16px;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+.button_primary {
+  background-color: var(--b-2) !important;
+  color: var(--c-1) !important;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 22px;
+}
+.button_small {
+  padding: 0 12px !important;
+  height: 30px;
+}
+
+.reset_btn {
+  &:hover {
+    color: #4096ff;
+    border-color: #4096ff;
+    background: var(--bg-6);
+  }
+  &:active {
+    color: #0958d9;
+    border-color: #0958d9;
+    background: var(--bg-6);
+  }
+  padding: 0 22px;
+  height: 35px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+  outline: none;
+  position: relative;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  background: var(--bg-6);
+  border: 1px solid var(--border-1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  color: var(--text-color);
+}
+
+// .blurry_body {
+//   -webkit-filter: blur(2px);
+//   -moz-filter: blur(2px);
+//   -o-filter: blur(2px);
+//   -ms-filter: blur(2px);
+//   filter: blur(2px);
+//   pointer-events: none;
+// }

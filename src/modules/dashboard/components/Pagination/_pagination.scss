@@ -1,0 +1,246 @@
+.pagination {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  font-weight: 20px;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  display: flex;
+  &_prev {
+    &:active {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    &:hover {
+      transition: all 0.2s;
+      background-color: var(--bg-btn);
+    }
+    margin-inline-end: 8px;
+    outline: 0;
+    height: 100%;
+    display: inline-block;
+    min-width: 32px;
+    color: rgba(0, 0, 0, 0.88);
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    list-style: none;
+    border-radius: 6px;
+    transition: all 0.2s;
+    // cursor: pointer;
+    button {
+      &:disabled {
+        color: rgba(0, 0, 0, 0.25);
+      }
+      color: rgba(0, 0, 0, 0.88);
+      min-height: 36px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      font-size: 12px;
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      outline: none;
+      transition: all 0.2s;
+      padding: 0 6px;
+      svg {
+        color: var(--text-color);
+        display: flex;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+  &_item {
+    &:active {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    &:hover {
+      transition: all 0.2s;
+      background-color: var(--bg-btn);
+    }
+    &_active {
+      background-color: var(--b-2) !important;
+      font-weight: 600 !important;
+      color: var(--c-1) !important;
+    }
+    min-width: 36px;
+    min-height: 36px;
+    border: none;
+    border-radius: 8px;
+    margin-inline-end: 8px;
+    background-color: var(--b-1);
+    color: var(--text-color);
+    &_link {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &_options {
+    height: 32px;
+    margin-right: unset;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_search {
+      &:hover {
+        border-color: #4096ff;
+      }
+      &:focus-within {
+        border-color: #1677ff;
+        box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+      }
+      cursor: text;
+      background-color: var(--bg-6);
+      border: 1px solid var(--border-1);
+      width: 100%;
+      height: 100%;
+      padding: 0 11px;
+      position: relative;
+      transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      &_box {
+        &_focused {
+          display: flex;
+        }
+
+        padding: 4px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: -120px;
+        z-index: 1050;
+        overflow: hidden;
+        font-variant: initial;
+        background-color: var(--bg-8);
+        border-radius: 8px;
+        outline: none;
+        inset: auto auto 39px 0px;
+        box-shadow:
+          0 6px 16px 0 rgba(0, 0, 0, 0.08),
+          0 3px 6px -4px rgba(0, 0, 0, 0.12),
+          0 9px 28px 8px rgba(0, 0, 0, 0.05);
+        &_option {
+          &:hover {
+            background-color: var(--c-11);
+          }
+          width: 100%;
+          padding: 5px 12px;
+          cursor: pointer;
+          border-radius: 4px;
+          color: var(--text-color);
+        }
+      }
+      &_input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        &_element {
+          &_focus {
+            &::placeholder {
+              color: var(--border-1) !important;
+            }
+          }
+          &::placeholder {
+            transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+            color: var(--text-color);
+          }
+          color: var(--text-color);
+          outline: 0;
+          border: none;
+          width: 84px;
+          appearance: none;
+          font-family: inherit;
+          background: transparent;
+        }
+        svg {
+          display: flex;
+          align-items: center;
+          color: rgba(0, 0, 0, 0.25);
+          font-style: normal;
+          line-height: 1;
+          text-align: center;
+          text-transform: none;
+          vertical-align: -0.125em;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          position: absolute;
+          top: 50%;
+          inset-inline-start: auto;
+          inset-inline-end: 11px;
+          height: 12px;
+          margin-top: -6px;
+          font-size: 12px;
+          pointer-events: none;
+          transition: opacity 0.3s ease;
+        }
+      }
+    }
+    &_goTo {
+      display: inline-block;
+      height: 32px;
+      margin-inline-start: 8px;
+      line-height: 32px;
+      vertical-align: top;
+      color: var(--text-color);
+      input {
+        &:hover {
+          border-color: #4096ff;
+        }
+        &:focus-within {
+          border-color: #1677ff;
+          box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+        }
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        min-width: 0;
+        padding: 4px 11px;
+        color: var(--text-color);
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        border-radius: 6px;
+        transition: all 0.2s;
+        background: var(--bg-6);
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--border-1);
+        height: 32px;
+        box-sizing: border-box;
+        margin: 0;
+        margin-inline-start: 8px;
+        margin-inline-end: 8px;
+        background-color: var(--b-1);
+      }
+    }
+
+    svg {
+      color: var(--border-1);
+    }
+  }
+}
+
+.selected_page_size {
+  color: var(--text-color);
+  font-weight: 600;
+  background-color: var(--c-10);
+  border-radius: 4px;
+  &:hover {
+    background-color: var(--c-10) !important;
+  }
+}

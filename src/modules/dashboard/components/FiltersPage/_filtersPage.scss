@@ -1,0 +1,11 @@
+.filters_page {
+  margin-bottom: 20px;
+  // height: 45%;
+  &_header {
+    justify-content: space-between;
+  }
+}
+
+.filter_page_icon {
+  color: var(--text-color);
+}

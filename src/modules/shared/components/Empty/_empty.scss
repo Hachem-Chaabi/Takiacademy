@@ -1,0 +1,14 @@
+.ant-empty-normal {
+  margin-block: 26% !important;
+}
+.ant-empty-description {
+  font-size: 16px;
+  color: var(--text-color) !important;
+}
+.ant-empty-image {
+  height: fit-content !important;
+  margin-bottom: 0px !important;
+  svg {
+    width: 80px;
+  }
+}

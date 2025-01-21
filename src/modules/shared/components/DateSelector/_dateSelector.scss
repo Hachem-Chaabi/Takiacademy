@@ -1,0 +1,121 @@
+.ant-picker-input {
+  input {
+    &::placeholder {
+      color: var(--border-1) !important;
+    }
+    color: var(--text-color) !important;
+    width: 132px !important;
+  }
+}
+
+.ant-picker {
+  background: var(--bg-6) !important;
+  border-color: var(--border-1) !important;
+}
+
+.ant-picker-suffix {
+  svg {
+    color: var(--border-1);
+  }
+}
+
+.ant-picker-panel-container {
+  background: var(--bg-8) !important;
+  color: var(--c-7) !important;
+
+  .ant-picker-now {
+    a {
+      &:hover {
+        color: var(--c-8) !important;
+      }
+    }
+  }
+}
+
+.ant-picker-header {
+  color: var(--text-color) !important;
+  border-color: var(--border-1) !important;
+  button {
+    // &:hover {
+    //   color: var(--bg-1) !important;
+    // }
+    color: var(--text-color) !important;
+  }
+}
+
+.ant-picker-content {
+  th {
+    color: var(--text-color) !important;
+  }
+}
+
+.ant-picker-cell {
+  .ant-picker-cell-inner {
+    &:hover {
+      background-color: var(--bg-btn) !important;
+    }
+  }
+  color: var(--border-1) !important;
+}
+
+.ant-picker-cell-in-view {
+  color: var(--text-color) !important;
+}
+
+.ant-picker-footer {
+  border-color: var(--border-1) !important;
+}
+
+.ant-picker-time-panel {
+  border-inline-color: var(--border-1) !important;
+
+  .ant-picker-content {
+    .ant-picker-time-panel-column {
+      scrollbar-color: var(--c-9) transparent !important;
+    }
+  }
+}
+
+.ant-picker-time-panel-cell-inner {
+  &:hover {
+    background-color: var(--bg-btn) !important;
+  }
+  color: var(--text-color) !important;
+}
+
+.ant-picker-time-panel-cell-selected {
+  div {
+    background-color: var(--c-10) !important;
+  }
+}
+
+.ant-picker-ok {
+  button {
+    &:hover {
+      background: #4096ff !important;
+      color: #fff;
+    }
+    &:disabled {
+      border-color: var(--border-1) !important;
+      background: var(--bg-btn) !important;
+    }
+    background: var(--c-7) !important;
+  }
+}
+
+.anticon-close-circle {
+  svg {
+    color: var(--border-1);
+  }
+}
+
+.ar_arrows {
+  .ant-picker-header {
+    .ant-picker-header-super-prev-btn,
+    .ant-picker-header-prev-btn,
+    .ant-picker-header-next-btn,
+    .ant-picker-header-super-next-btn {
+      transform: rotate(90deg);
+    }
+  }
+}

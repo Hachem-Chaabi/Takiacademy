@@ -1,0 +1,42 @@
+.table_actions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  &_box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--b-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--b-0);
+    padding: 6px;
+    gap: 12px;
+    opacity: 0.99;
+    box-shadow: 2px 2px 8px #53789f33;
+    &_item {
+      &:hover {
+        background: var(--h-3);
+      }
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.disabled_item_btn {
+  pointer-events: none;
+}
